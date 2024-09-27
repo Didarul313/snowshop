@@ -1,0 +1,14 @@
+[
+  {
+    "keyword": "price",
+    "reply": "Our prices are highly competitive and vary by product. Please check the product details for exact pricing."
+    },
+  {
+    "keyword": "delivery",
+    "reply": "We offer fast delivery across all major regions."
+    },
+  {
+    "keyword": "hi",
+    "reply": "Hello! How can I help you today?"
+    }
+]

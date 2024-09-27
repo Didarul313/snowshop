@@ -1,0 +1,103 @@
+        /* Styles for the page */
+        body { font-family: Arial, sans-serif; background-color: #f0f0f0; margin: 0; padding: 0; color: #333; }
+        nav { display: flex; justify-content: space-between; align-items: center; background-color: #333; padding: 10px; }
+        nav a { color: #888; text-decoration: none; padding: 5px 10px; font-size: 1rem; }
+        nav a:hover { color: #ff5e62; }
+        header {height:7vh}
+        .product-section { display: flex; justify-content: space-around; flex-wrap: wrap; padding: 20px; background-color:antiquewhitee; }
+        .product-card { background-color: #fff; padding: 10px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); text-align: center;margin: 20px; width: 350px; margin: 25px;transition: transform 0.3s; }
+        .product-card:hover { transform: scale(1.05); }
+        .product-card img { width: 96%; border-radius: 10px; }
+        .product-card h2 { font-size: 1.3rem; margin: 10px 0; }
+        .product-card p { color: #666; font-size: 1rem; margin: 5px 0; }
+        .product-card button { background-color: #ff5e62; color: white; border: none; padding: 8px 15px; border-radius: 20px; font-size: 0.9rem; cursor: pointer; transition: background-color 0.3s; }
+        .product-card button:hover { background-color: #ff9966; }
+        .added-text { color: green; font-weight: bold; display: none; }
+        .chat-btn { position: fixed; bottom: 20px; right: 20px; background-color: #ff5e62; border: none; border-radius: 50%; padding: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); cursor: pointer; z-index: 1000; }
+        .chat-window { display: none; position: fixed; bottom: 70px; right: 20px; width: 250px; border: 1px solid #ccc; border-radius: 8px; background-color: rgba(255, 255, 255, 0.3); backdrop-filter: blur(10px); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); z-index: 1001; }
+        .chat-window textarea { background-color: rgba(255, 255, 255, 0.3); backdrop-filter: blur(10px); width: calc(100% - 50px); margin: 5px; padding: 5px; border-radius: 4px; border: 1px solid #ccc; }
+        .chat-window button { margin: 2px; padding: 8px 15px; border: none; background-color: #ff5e62; color: white; border-radius: 4px; cursor: pointer; }
+        footer { background-color: #333; color: white; text-align: center; padding: 10px; position: relative; bottom: 0; width: 100%; max-width:100%;}
+        .footer-icons { display: flex; justify-content: center; margin-top: 10px; }
+        .footer-icons i { color: #ff5e62; margin: 0 10px; }
+        /* Hamburger styles */
+/* Hamburger styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+.navbar {
+  height: 7vh;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+.nav-menu {
+  position: fixed;
+  top: 4.7rem;
+  left: -100%;
+  flex-direction: column;
+  background-color: rgba(128, 145, 225, 0.3); backdrop-filter: blur(10px); border-top-right-radius: 15px; border-bottom-right-radius: 15px;
+  font-size: 48px;
+    color: #00BFFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px; 
+  font-family: 'Georgia', serif;
+  width: 230px;
+  height: 600px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+}
+
+.nav-menu.active {
+  left: 0;
+}
+
+.nav-item {
+  margin: 2.5rem 0;
+}
+
+.nav-link {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.nav-link:hover {
+  color: #482ff7;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
